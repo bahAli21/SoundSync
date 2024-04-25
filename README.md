@@ -5,8 +5,8 @@ SoundSync est une application de lecteur audio simple développée en C# avec l'
 ## Fonctionnalités 🚀
 
 - Lecture de fichiers audio au format MP3.
-- Commandes de lecture standard : Lecture, Pause, Avance rapide, Retour en arrière.
-- Barre de progression interactive pour naviguer facilement dans la piste audio.
+- Commandes de lecture standard : PLAY, PAUSE, STOP et OPEN.
+- Barre de progression interactive pour montrer l'evolution de la lecture
 - Répétition automatique de la piste une fois terminée.
 
 ## Comment utiliser 📝
