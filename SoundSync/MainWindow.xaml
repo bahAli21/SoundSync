@@ -1,0 +1,58 @@
+﻿<Window x:Class="SoundSync.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoundSync"
+        mc:Ignorable="d"
+        Title="SoundSync" Height="450" Width="450" Icon="icone.ico" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+         TextElement.FontWeight="Regular"
+         TextElement.FontSize="13"
+         TextOptions.TextFormattingMode="Ideal"
+         TextOptions.TextRenderingMode="Auto"
+         Background="{DynamicResource MaterialDesignPaper}"
+         FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <DockPanel>
+            <materialDesign:ColorZone Padding="16" ClipToBounds="False" Mode="PrimaryDark" DockPanel.Dock="Top">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="16,0,0,0" VerticalAlignment="Center" Text="🎵 SoundSync 🎶✨ - Harmonisez votre expérience auditive !" />
+                </StackPanel>
+            </materialDesign:ColorZone>
+            <Rectangle Width="450" Height="60" DockPanel.Dock="Bottom" Fill="LightGray"></Rectangle>
+            <DockPanel DockPanel.Dock="Top">
+                <WrapPanel DockPanel.Dock="Top" Height="40">
+                    <Image VerticalAlignment="Center" Margin="100 5 0 0" Width="20" RenderTransformOrigin="-1.048,-0.453" Source="/icons8-audio-26.png" Height="22"/>
+                    <Slider VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10 10 0 0" Width="200" x:Name="volume" IsSelectionRangeEnabled="True" Maximum="100" Minimum="0" Orientation="Horizontal" Value="10" ValueChanged="volume_ValueChanged" RenderTransformOrigin="0.447,-0.02" SelectionEnd="20"
+                      SelectionStart="0"
+                      TickFrequency="5"
+                      TickPlacement="BottomRight" />
+
+                </WrapPanel>
+                <TextBlock Background="LightGray" DockPanel.Dock="Left" Margin="10 12 0 0" x:Name="filePath" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource MaterialDesignBody1TextBlock}" Text=" Aucun titre selectionné ... " />
+                <ToggleButton Margin="24 5 0 0" Style="{StaticResource MaterialDesignActionToggleButton}" ToolTip="Author : BAH Mamadou" RenderTransformOrigin="1.223,0.416">
+                    <Image Source="myProfile.jpg" />
+                </ToggleButton>
+                <Button DockPanel.Dock="Right" Width="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 10 50 0" x:Name="btnParcourir" Click="btnParcourir_Click" Content="OPEN" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" ToolTip="Ouvrir un fichier mp3" />
+                
+
+            </DockPanel>
+            <WrapPanel  Height="230" DockPanel.Dock="Bottom" Margin="40 15 0 40">
+                <Button x:Name="btnPause" Click="btnPause_Click" Width="160" Margin="10" Height="30" materialDesign:ButtonAssist.CornerRadius="10" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Style="{StaticResource MaterialDesignRaisedDarkButton}" ToolTip="Pause">
+                    <TextBlock Text="PAUSE" />
+                </Button>
+                <Button x:Name="btnStop" Click="btnStop_Click" Width="160" Margin="10" Height="30" materialDesign:ButtonAssist.CornerRadius="10" IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Style="{StaticResource MaterialDesignRaisedDarkButton}" ToolTip="Arreter">
+                    <TextBlock Text="STOP" />
+                </Button>
+
+                <ProgressBar x:Name="progressBar" Margin="10 10 0 0" Width="340" materialDesign:TransitionAssist.DisableTransitions="True" Value="0" Minimum="0"  ToolTip="Progression Lecture"/>
+                <Image Margin="105 12 0 0" Height="101" Width="140" Source="/icon-1728567_1280.jpg"/>
+
+            </WrapPanel>
+        </DockPanel>
+        <TextBlock Margin="0 0 0 13" HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignBody1TextBlock}" Text="© 2024 Mamadou BAH. Tous droits réservés 😊👍" />
+
+    </Grid>
+</Window>
