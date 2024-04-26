@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ETGcDQ6FdNzUkC3NVQGr1goJfR6llEnNlQbXWCJyy6NqRNLIj6BxRgeCEOoPLerBzURjGHT6z0yeNzoMui6SZg==",
+  "success": true,
+  "projectFilePath": "D:\\Visual-Studio-Project\\SoundSync\\SoundSync\\SoundSync.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mamad\\.nuget\\packages\\materialdesigncolors\\1.2.6\\materialdesigncolors.1.2.6.nupkg.sha512",
+    "C:\\Users\\mamad\\.nuget\\packages\\materialdesignthemes\\3.1.3\\materialdesignthemes.3.1.3.nupkg.sha512",
+    "C:\\Users\\mamad\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\mamad\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\mamad\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\mamad\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.18\\microsoft.netcore.app.host.win-x64.7.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}
